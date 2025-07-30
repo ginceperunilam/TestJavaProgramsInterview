@@ -1,4 +1,4 @@
-package com.JavaProjects.TestProjects;
+package com.JavaProjects.MainMethod;
 
 public class TestMainClass 
 {

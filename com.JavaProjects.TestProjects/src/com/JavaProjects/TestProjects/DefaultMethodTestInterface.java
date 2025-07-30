@@ -3,7 +3,7 @@ package com.JavaProjects.TestProjects;
 public class DefaultMethodTestInterface implements DefaultMethodTestInterface1, DefaultMethodTestInterface2
 {
 
-	DefaultMethodTestInterface()
+	public DefaultMethodTestInterface()
 	{
 		showLogMessage("In Class DefaultMethodTestInterface");
 	}

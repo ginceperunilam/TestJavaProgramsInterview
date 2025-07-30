@@ -1,8 +1,79 @@
-package com.JavaProjects.TestProjects;
+package com.JavaProjects.MainMethod;
 
 import java.util.Collection;
 import java.util.List;
 
+import com.JavaProjects.TestProjects.AbstractBankTest;
+import com.JavaProjects.TestProjects.AccessSpecifierChildNonSubclassDifferentPackage;
+import com.JavaProjects.TestProjects.AccessSpecifierChildSubclassDifferentPackage;
+import com.JavaProjects.TestProjects.AnagramTestPgm;
+import com.JavaProjects.TestProjects.AnonymousObjectTest;
+import com.JavaProjects.TestProjects.ArrayTests;
+import com.JavaProjects.TestProjects.BiFunctionTest;
+import com.JavaProjects.TestProjects.BinaryOperatorTest;
+import com.JavaProjects.TestProjects.CollectionTest;
+import com.JavaProjects.TestProjects.CollectionTest1;
+import com.JavaProjects.TestProjects.ComparableImplementation;
+import com.JavaProjects.TestProjects.ComparatorInterfaceImplementation;
+import com.JavaProjects.TestProjects.ComparatorTests;
+import com.JavaProjects.TestProjects.ConcatNumberAndString;
+import com.JavaProjects.TestProjects.ConstructorTest;
+import com.JavaProjects.TestProjects.DatabaseConnectionTest;
+import com.JavaProjects.TestProjects.DateFunctionTest;
+import com.JavaProjects.TestProjects.DefaultMethodTestInterface;
+import com.JavaProjects.TestProjects.DoWhileLoopTest;
+import com.JavaProjects.TestProjects.ExceptionCustomException;
+import com.JavaProjects.TestProjects.ExceptionHandlingUsingThrow;
+import com.JavaProjects.TestProjects.ExceptionHandlingUsingThrows;
+import com.JavaProjects.TestProjects.ExceptionTests;
+import com.JavaProjects.TestProjects.FilterInJavaTest;
+import com.JavaProjects.TestProjects.FinalKeywordWithClassParent;
+import com.JavaProjects.TestProjects.FinalKeywordWithMethodChild;
+import com.JavaProjects.TestProjects.FinalKeywordWithVariable;
+import com.JavaProjects.TestProjects.ForEachTest;
+import com.JavaProjects.TestProjects.ForLoopTest;
+import com.JavaProjects.TestProjects.FunctionalInterfaceTest;
+import com.JavaProjects.TestProjects.FunctionalInterrfaceImplTest;
+import com.JavaProjects.TestProjects.GenericsTest;
+import com.JavaProjects.TestProjects.HashMapKeyUserDefinedObj;
+import com.JavaProjects.TestProjects.HashMapTest;
+import com.JavaProjects.TestProjects.IllegalArgumentExceptionTestPgm;
+import com.JavaProjects.TestProjects.InheritanceChildTest;
+import com.JavaProjects.TestProjects.InheritanceMultilevelTest;
+import com.JavaProjects.TestProjects.InnerClassTest;
+import com.JavaProjects.TestProjects.LambdaExpressionTest;
+import com.JavaProjects.TestProjects.LambdaExpressionWithArgumentsAndReturnTest;
+import com.JavaProjects.TestProjects.ListTestPgm;
+import com.JavaProjects.TestProjects.MapInJavaTest;
+import com.JavaProjects.TestProjects.MethodOverloadingTest;
+import com.JavaProjects.TestProjects.MethodOverrideChild;
+import com.JavaProjects.TestProjects.MethodOverrideParent;
+import com.JavaProjects.TestProjects.MetodOverridingTest;
+import com.JavaProjects.TestProjects.ObjectClassMethodsTest;
+import com.JavaProjects.TestProjects.PreIncrementOperatorTestPgm;
+import com.JavaProjects.TestProjects.ReduceInJavaTest;
+import com.JavaProjects.TestProjects.SQLWarningClassTestPgm;
+import com.JavaProjects.TestProjects.SealedClasses;
+import com.JavaProjects.TestProjects.SortUsingComparable;
+import com.JavaProjects.TestProjects.SortUsingComparator;
+import com.JavaProjects.TestProjects.StaticBlockTest;
+import com.JavaProjects.TestProjects.StaticMethodTest;
+import com.JavaProjects.TestProjects.StaticVariableTest;
+import com.JavaProjects.TestProjects.StreamTest;
+import com.JavaProjects.TestProjects.StreamTestUsingAccObj;
+import com.JavaProjects.TestProjects.StringBufferTest;
+import com.JavaProjects.TestProjects.SwichStatementTest;
+import com.JavaProjects.TestProjects.ThisKeywordTest;
+import com.JavaProjects.TestProjects.ThreadClassTest;
+import com.JavaProjects.TestProjects.ThreadOtherMethodsTest;
+import com.JavaProjects.TestProjects.ThreadUsingLambda;
+import com.JavaProjects.TestProjects.ThreadUsingRunnableTest;
+import com.JavaProjects.TestProjects.TypeCastingTest;
+import com.JavaProjects.TestProjects.VarKeyWord;
+import com.JavaProjects.TestProjects.WhileLoopTest;
+import com.JavaProjects.TestProjects.WrapperClassesTest;
+import com.JavaProjects.TestProjects.InnerClassTest.InnerClass;
+import com.JavaProjects.TestProjects.InnerClassTest.StaticInnerClass;
 import com.JavaProjects.TestProjectsAccessSpecifier.AccessSpecifierChildNonSubclassSamePackage;
 import com.JavaProjects.TestProjectsAccessSpecifier.AccessSpecifierChildSubclassSamePackage;
 import com.JavaProjects.TestProjectsAccessSpecifier.AccessSpecifierParent;
@@ -78,9 +149,40 @@ public class TestMainMethodCalls
 //		sealedClassesTests();//SealedClasses
 //		concatNumberAndString();//concat number and string
 //		useOfNonStaticVariablesInStaticMethod();//use Of NonStaticV ariables In Static Method
-		defaultMethodTestInterface();//Default method test for interface; introduced in java 8
+//		defaultMethodTestInterface();//Default method test for interface; introduced in java 8
+//		comparatorTests();//Implement manual sort using comparator
+//		comparatorInterfaceImplementation();//custom sort by Implementing comparator interface
+		comparableImplementation();//Implementation of comparable interface
 	}
 	
+	private void comparableImplementation()
+	{
+		ComparableImplementation comparableImplementation = new ComparableImplementation();
+		try
+		{
+			comparableImplementation.comparableImplementation();
+			comparableImplementation.comparableImplementationUsingSort();
+		} 
+		catch (Exception e)
+		{
+			System.out.println("TestMainMethodCalls Exception :"+e);
+		}
+	}
+
+	//custom sort by Implementing comparator interface
+	private void comparatorInterfaceImplementation()
+	{
+		ComparatorInterfaceImplementation comparatorInterfaceImplementation	= new ComparatorInterfaceImplementation();
+		comparatorInterfaceImplementation.comparatorInterfaceImplementationTest();
+	}
+
+	//Implement manual sort using comparator
+	private void comparatorTests()
+	{
+		ComparatorTests comparatorTests = new ComparatorTests();
+		comparatorTests.comparatorTests();
+	}
+
 	//Default method test for interface; introduced in java 8
 	private void defaultMethodTestInterface()
 	{

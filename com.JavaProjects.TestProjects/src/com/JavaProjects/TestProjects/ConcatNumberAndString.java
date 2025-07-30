@@ -2,7 +2,7 @@ package com.JavaProjects.TestProjects;
 
 public class ConcatNumberAndString
 {
-	ConcatNumberAndString()
+	public void ConcatNumberAndString()
 	{
 		int age = 30;
 		int numberToAdd = 22;

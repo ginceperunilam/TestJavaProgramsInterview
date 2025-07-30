@@ -3,7 +3,7 @@ package com.JavaProjects.TestProjects;
 public class StaticVariableTest 
 {
 	//Static key word make something as class member not an object member
-	static String category = "";
+	public static String category = "";
 	public String modelName = "";
 	public String modelNo;
 	public Double price;
