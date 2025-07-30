@@ -10,7 +10,7 @@ import com.JavaProjects.TestProjectsFiles.TestAccountObject;
 public class StreamTestUsingAccObj
 {
 	List<TestAccountObject> testAccountObjects = new ArrayList<>();
-	StreamTestUsingAccObj()
+	public StreamTestUsingAccObj()
 	{
 		testAccountObjects.add(new TestAccountObject("1003G2512", "Gince", 1200d,"INR", "Active"));
 		testAccountObjects.add(new TestAccountObject("1003F2504", "Feivel", 412d,"INR", "Active"));
