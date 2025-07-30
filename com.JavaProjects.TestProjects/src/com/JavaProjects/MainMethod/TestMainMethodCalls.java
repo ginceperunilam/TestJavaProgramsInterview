@@ -50,6 +50,7 @@ import com.JavaProjects.TestProjects.MethodOverrideChild;
 import com.JavaProjects.TestProjects.MethodOverrideParent;
 import com.JavaProjects.TestProjects.MetodOverridingTest;
 import com.JavaProjects.TestProjects.ObjectClassMethodsTest;
+import com.JavaProjects.TestProjects.OptionalTests;
 import com.JavaProjects.TestProjects.PreIncrementOperatorTestPgm;
 import com.JavaProjects.TestProjects.ReduceInJavaTest;
 import com.JavaProjects.TestProjects.SQLWarningClassTestPgm;
@@ -152,9 +153,16 @@ public class TestMainMethodCalls
 //		defaultMethodTestInterface();//Default method test for interface; introduced in java 8
 //		comparatorTests();//Implement manual sort using comparator
 //		comparatorInterfaceImplementation();//custom sort by Implementing comparator interface
-		comparableImplementation();//Implementation of comparable interface
+//		comparableImplementation();//Implementation of comparable interface
+		optionalTests();//Test optional
 	}
 	
+	private void optionalTests()
+	{
+		OptionalTests optionalTests = new OptionalTests();
+		optionalTests.getStudentsByRollNo("n");
+	}
+
 	private void comparableImplementation()
 	{
 		ComparableImplementation comparableImplementation = new ComparableImplementation();
