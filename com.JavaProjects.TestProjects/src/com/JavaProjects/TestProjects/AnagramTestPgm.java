@@ -15,8 +15,8 @@ public class AnagramTestPgm
 //		System.out.println("String 2:");
 //		setString2(input.nextLine());
 		
-		setString1("Listen");
-		setString1("Silent");
+		setString1("listens");
+		setString2("silesnt");
 	}
 
 	public String getString1()
