@@ -7,6 +7,7 @@ import com.JavaProjects.TestProjects.AbstractBankTest;
 import com.JavaProjects.TestProjects.AccessSpecifierChildNonSubclassDifferentPackage;
 import com.JavaProjects.TestProjects.AccessSpecifierChildSubclassDifferentPackage;
 import com.JavaProjects.TestProjects.AnagramTestPgm;
+import com.JavaProjects.TestProjects.AnagramWithoutUsingBuildInFns;
 import com.JavaProjects.TestProjects.AnonymousObjectTest;
 import com.JavaProjects.TestProjects.ArrayTests;
 import com.JavaProjects.TestProjects.BiFunctionTest;
@@ -154,15 +155,30 @@ public class TestMainMethodCalls
 //		comparatorTests();//Implement manual sort using comparator
 //		comparatorInterfaceImplementation();//custom sort by Implementing comparator interface
 //		comparableImplementation();//Implementation of comparable interface
-		optionalTests();//Test optional
+//		optionalTests();//Test optional
+//		anagramWithoutUsingBuildInFns();//test anagram without build in functions
+		testStreams();
 	}
 	
+	private void testStreams()
+	{
+		new TestStreams();
+	}
+	
+	//test anagram without build in functions
+	private void anagramWithoutUsingBuildInFns()
+	{
+		new AnagramWithoutUsingBuildInFns("listens", "silesnt");
+	}
+
+	//Test optional
 	private void optionalTests()
 	{
 		OptionalTests optionalTests = new OptionalTests();
 		optionalTests.getStudentsByRollNo("n");
 	}
 
+	//Implementation of comparable interface
 	private void comparableImplementation()
 	{
 		ComparableImplementation comparableImplementation = new ComparableImplementation();
